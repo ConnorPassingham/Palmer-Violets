@@ -35,9 +35,9 @@
                 <a href="#hero" class="nav-link active">Home</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#players" class="nav-link">Players</a>
+                <a href="#statistics" class="nav-link">Stats</a>
                 <a href="#fixtures" class="nav-link">Fixtures</a>
                 <a href="#results" class="nav-link">Results</a>
-                <a href="#statistics" class="nav-link">Statistics</a>
                 <a href="#history" class="nav-link">Honours</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </nav>
@@ -52,7 +52,7 @@
                 <img src="PV-Badge.png" alt="Palmer Violets Badge" class="hero-badge reveal">
                 <h1 class="hero-title reveal">PALMER VIOLETS</h1>
                 <h2 class="hero-subtitle reveal">You Know Chippy Chips.</h2>
-                <p class="hero-text reveal">7-a-side football. Established 2024.</p>
+                <p class="hero-text reveal">7-a-side football | Est. 2024</p>
                 <div class="hero-buttons reveal">
                     <a href="#fixtures" class="btn btn-primary">View Fixtures</a>
                     <a href="#players" class="btn btn-secondary">Meet the Squad</a>
@@ -133,224 +133,57 @@
         <!-- ==================== PLAYERS ==================== -->
         <section id="players" class="section">
             <div class="container">
-                <h2 class="section-title text-center reveal">Meet the Squad</h2>
+                <h2 class="section-title text-center reveal">The Squad</h2>
                 
-                <div class="player-filters reveal">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="goalkeeper">Goalkeepers</button>
-                    <button class="filter-btn" data-filter="defender">Defenders</button>
-                    <button class="filter-btn" data-filter="midfielder">Midfielders</button>
-                    <button class="filter-btn" data-filter="attacker">Attackers</button>
+                <div class="player-filters reveal" id="player-season-filters">
+                    <button class="filter-btn active" data-season="allTime">All-Time</button>
+                    <button class="filter-btn" data-season="2025/26">2025/26</button>
+                    <button class="filter-btn" data-season="2024/25">2024/25</button>
                 </div>
 
-                <div class="players-grid" id="players-grid">
-                    <!-- Player 1 -->
-                    <div class="player-card reveal" data-position="goalkeeper">
-                        <!-- Replace this div with an img tag when you have real photos: <img src="player1.jpg" alt="Player Name"> -->
-                        <div class="player-image-placeholder"></div>
-                        <div class="player-info">
-                            <span class="player-number">#1</span>
-                            <h3 class="player-name">Tom Davies</h3>
-                            <span class="player-position">Goalkeeper</span>
-                            <div class="player-stats-mini">
-                                <div><strong>14</strong><span>Apps</span></div>
-                                <div><strong>4</strong><span>CS</span></div>
-                                <div><strong>1</strong><span>MOTM</span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Player 2 -->
-                    <div class="player-card reveal" data-position="defender">
-                        <div class="player-image-placeholder"></div>
-                        <div class="player-info">
-                            <span class="player-number">#4</span>
-                            <h3 class="player-name">James Miller</h3>
-                            <span class="player-position">Defender</span>
-                            <div class="player-stats-mini">
-                                <div><strong>13</strong><span>Apps</span></div>
-                                <div><strong>2</strong><span>Goals</span></div>
-                                <div><strong>3</strong><span>Asts</span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Player 3 -->
-                    <div class="player-card reveal" data-position="defender">
-                        <div class="player-image-placeholder"></div>
-                        <div class="player-info">
-                            <span class="player-number">#5</span>
-                            <h3 class="player-name">Ryan Taylor</h3>
-                            <span class="player-position">Defender</span>
-                            <div class="player-stats-mini">
-                                <div><strong>15</strong><span>Apps</span></div>
-                                <div><strong>0</strong><span>Goals</span></div>
-                                <div><strong>1</strong><span>Asts</span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Player 4 -->
-                    <div class="player-card reveal" data-position="midfielder">
-                        <div class="player-image-placeholder"></div>
-                        <div class="player-info">
-                            <span class="player-number">#8</span>
-                            <h3 class="player-name">Luke Anderson</h3>
-                            <span class="player-position">Midfielder</span>
-                            <div class="player-stats-mini">
-                                <div><strong>14</strong><span>Apps</span></div>
-                                <div><strong>5</strong><span>Goals</span></div>
-                                <div><strong>9</strong><span>Asts</span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Player 5 -->
-                    <div class="player-card reveal" data-position="midfielder">
-                        <div class="player-image-placeholder"></div>
-                        <div class="player-info">
-                            <span class="player-number">#10</span>
-                            <h3 class="player-name">Connor Passingham</h3>
-                            <span class="player-position">Midfielder</span>
-                            <div class="player-stats-mini">
-                                <div><strong>12</strong><span>Apps</span></div>
-                                <div><strong>8</strong><span>Goals</span></div>
-                                <div><strong>6</strong><span>Asts</span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Player 6 -->
-                    <div class="player-card reveal" data-position="midfielder">
-                        <div class="player-image-placeholder"></div>
-                        <div class="player-info">
-                            <span class="player-number">#14</span>
-                            <h3 class="player-name">Alex Smith</h3>
-                            <span class="player-position">Midfielder</span>
-                            <div class="player-stats-mini">
-                                <div><strong>10</strong><span>Apps</span></div>
-                                <div><strong>3</strong><span>Goals</span></div>
-                                <div><strong>4</strong><span>Asts</span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Player 7 -->
-                    <div class="player-card reveal" data-position="attacker">
-                        <div class="player-image-placeholder"></div>
-                        <div class="player-info">
-                            <span class="player-number">#9</span>
-                            <h3 class="player-name">Harry Jones</h3>
-                            <span class="player-position">Attacker</span>
-                            <div class="player-stats-mini">
-                                <div><strong>14</strong><span>Apps</span></div>
-                                <div><strong>10</strong><span>Goals</span></div>
-                                <div><strong>2</strong><span>Asts</span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Player 8 -->
-                    <div class="player-card reveal" data-position="attacker">
-                        <div class="player-image-placeholder"></div>
-                        <div class="player-info">
-                            <span class="player-number">#11</span>
-                            <h3 class="player-name">Dan Williams</h3>
-                            <span class="player-position">Attacker</span>
-                            <div class="player-stats-mini">
-                                <div><strong>11</strong><span>Apps</span></div>
-                                <div><strong>7</strong><span>Goals</span></div>
-                                <div><strong>5</strong><span>Asts</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- Dynamically populated by JS -->
+                <div class="players-grid" id="players-grid"></div>
             </div>
         </section>
 
         <!-- ==================== STATISTICS & LEADERBOARDS ==================== -->
         <section id="statistics" class="section bg-light">
             <div class="container">
-                <h2 class="section-title text-center reveal">Season Statistics</h2>
+                <h2 class="section-title text-center reveal">Club Statistics</h2>
                 
-                <div class="stats-grid reveal">
-                    <div class="stat-card">
-                        <h3>14</h3>
-                        <p>Games Played</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>9</h3>
-                        <p>Wins</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>2</h3>
-                        <p>Draws</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>3</h3>
-                        <p>Losses</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>48</h3>
-                        <p>Goals Scored</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>29</h3>
-                        <p>Goals Conceded</p>
-                    </div>
+                <div class="player-filters reveal" id="stats-season-filters">
+                    <button class="filter-btn active" data-season="allTime">All-Time</button>
+                    <button class="filter-btn" data-season="2025/26">2025/26</button>
+                    <button class="filter-btn" data-season="2024/25">2024/25</button>
+                </div>
+                
+                <!-- Dynamic Team Overview -->
+                <div class="stats-grid reveal" id="team-stats-grid"></div>
+
+                <!-- Club Record Holders (Dynamic) -->
+                <div class="record-holders-section reveal">
+                    <h3 class="subsection-title text-center">Club Record Holders</h3>
+                    <div class="record-holders-grid" id="record-holders-grid"></div>
                 </div>
 
-                <div class="advanced-stats reveal">
-                    <div class="win-rate-container">
-                        <div class="win-rate-header">
-                            <h4>Win Percentage</h4>
-                            <span>64%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 64%;"></div>
-                        </div>
-                    </div>
-                    <div class="form-container">
-                        <h4>Last 5 Form</h4>
-                        <div class="form-badges">
-                            <span class="form-badge win">W</span>
-                            <span class="form-badge win">W</span>
-                            <span class="form-badge draw">D</span>
-                            <span class="form-badge win">W</span>
-                            <span class="form-badge loss">L</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Leaderboards -->
+                <!-- Dynamic Leaderboards -->
                 <div class="leaderboards-section reveal">
-                    <h3 class="subsection-title text-center">Team Leaders</h3>
-                    <div class="leaderboards-grid">
+                    <h3 class="subsection-title text-center">Leaderboards</h3>
+                    <div class="leaderboards-grid" id="leaderboards-grid">
                         <div class="leaderboard-card">
                             <h4>Top Goalscorers</h4>
-                            <ol>
-                                <li class="leader-first"><span>Harry Jones</span> <strong>10</strong></li>
-                                <li><span>Connor Passingham</span> <strong>8</strong></li>
-                                <li><span>Dan Williams</span> <strong>7</strong></li>
-                            </ol>
-                        </div>
-                        <div class="leaderboard-card">
-                            <h4>Top Assists</h4>
-                            <ol>
-                                <li class="leader-first"><span>Luke Anderson</span> <strong>9</strong></li>
-                                <li><span>Connor Passingham</span> <strong>6</strong></li>
-                                <li><span>Dan Williams</span> <strong>5</strong></li>
-                            </ol>
+                            <ol id="lb-goals"></ol>
                         </div>
                         <div class="leaderboard-card">
                             <h4>Most Appearances</h4>
-                            <ol>
-                                <li class="leader-first"><span>Ryan Taylor</span> <strong>15</strong></li>
-                                <li><span>Tom Davies</span> <strong>14</strong></li>
-                                <li><span>Harry Jones</span> <strong>14</strong></li>
-                            </ol>
+                            <ol id="lb-apps"></ol>
+                        </div>
+                        <div class="leaderboard-card">
+                            <h4>Most MOTM</h4>
+                            <ol id="lb-motm"></ol>
                         </div>
                     </div>
+                    <p class="motm-note text-center" id="motm-note">* MOTM was awarded every second match during the 2024/25 season.</p>
                 </div>
             </div>
         </section>
@@ -361,7 +194,6 @@
                 <h2 class="section-title text-center reveal">Upcoming Fixtures</h2>
                 
                 <div class="fixture-list reveal">
-                    <!-- Fixture 1 -->
                     <div class="match-row">
                         <div class="match-date-col">
                             <span class="date-day">23</span>
@@ -378,8 +210,6 @@
                             <span class="competition-tag">League</span>
                         </div>
                     </div>
-
-                    <!-- Fixture 2 -->
                     <div class="match-row">
                         <div class="match-date-col">
                             <span class="date-day">30</span>
@@ -396,24 +226,6 @@
                             <span class="competition-tag">League</span>
                         </div>
                     </div>
-                    
-                    <!-- Fixture 3 -->
-                    <div class="match-row">
-                        <div class="match-date-col">
-                            <span class="date-day">06</span>
-                            <span class="date-month">SEP</span>
-                        </div>
-                        <div class="match-teams-col">
-                            <div class="team-name"><img src="PV-Badge.png" alt="Badge" class="mini-badge"> Palmer Violets</div>
-                            <div class="vs-text">vs</div>
-                            <div class="team-name">Eastern United</div>
-                        </div>
-                        <div class="match-info-col">
-                            <span>6:30 PM</span>
-                            <span>Warkworth</span>
-                            <span class="competition-tag">Cup</span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -424,7 +236,6 @@
                 <h2 class="section-title text-center reveal">Recent Results</h2>
                 
                 <div class="results-list reveal">
-                    <!-- Result 1 -->
                     <div class="match-row result-row win-border">
                         <div class="match-date-col">
                             <span class="date-day">16</span>
@@ -440,8 +251,6 @@
                             <span class="competition-tag">League</span>
                         </div>
                     </div>
-
-                    <!-- Result 2 -->
                     <div class="match-row result-row win-border">
                         <div class="match-date-col">
                             <span class="date-day">09</span>
@@ -454,23 +263,6 @@
                         </div>
                         <div class="match-info-col">
                             <span class="result-indicator win-text">WIN</span>
-                            <span class="competition-tag">League</span>
-                        </div>
-                    </div>
-
-                    <!-- Result 3 -->
-                    <div class="match-row result-row draw-border">
-                        <div class="match-date-col">
-                            <span class="date-day">02</span>
-                            <span class="date-month">AUG</span>
-                        </div>
-                        <div class="match-teams-col result-teams">
-                            <div class="team-name"><img src="PV-Badge.png" alt="Badge" class="mini-badge"> Palmer Violets</div>
-                            <div class="score-box draw-score">2 - 2</div>
-                            <div class="team-name">The Wanderers</div>
-                        </div>
-                        <div class="match-info-col">
-                            <span class="result-indicator draw-text">DRAW</span>
                             <span class="competition-tag">League</span>
                         </div>
                     </div>
@@ -591,6 +383,30 @@
             <p>&copy; 2026 Palmer Violets. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- ==================== PLAYER MODAL ==================== -->
+    <div id="player-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button class="close-btn" id="modal-close" aria-label="Close modal">×</button>
+            <div class="modal-header">
+                <div class="modal-image-container" id="modal-image-container"></div>
+                <h3 id="modal-name" class="modal-name"></h3>
+            </div>
+            <div class="modal-body">
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Season</th>
+                            <th>Apps</th>
+                            <th>Goals</th>
+                            <th>MOTM</th>
+                        </tr>
+                    </thead>
+                    <tbody id="modal-table-body"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
